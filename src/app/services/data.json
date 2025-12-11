@@ -1,0 +1,210 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Ordinateurs"
+    },
+    {
+      "id": 2,
+      "name": "Écrans"
+    },
+    {
+      "id": 3,
+      "name": "Accessoires"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "category_id": 2,
+      "name": "Écran 24\"",
+      "reference": "3409FI304",
+      "price": 400.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Cet écran d'ordinateur est doté d'une technologie révolutionnaire de \"pixel ultra-lumineux\" offrant une résolution de 16K pour une qualité d'image inégalée. Sa connexion sans fil ultra-rapide permet une transmission de données instantanée.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p1.png",
+      "short_description": "LCD, FHD U24GERH",
+      "best": true,
+      "suggested": true
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "name": "Écran 21\"",
+      "reference": "9384OE399",
+      "price": 250.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Les réglages de l'écran sont entièrement automatisés grâce à une intelligence artificielle intégrée, offrant ainsi une expérience utilisateur sans précédent. Son châssis en titane garantit une durabilité et une stabilité inégalées.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p2.png",
+      "short_description": "FHD Dell P2219H",
+      "best": true,
+      "suggested": false
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "name": "Souris FSTYLER",
+      "reference": "5839VF102",
+      "price": 72.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Cette souris d'ordinateur est équipée d'un capteur optique de haute précision qui permet un suivi fluide et précis des mouvements. Les boutons programmables offrent une personnalisation maximale pour répondre à vos besoins de productivité.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p3.png",
+      "short_description": "Pro, Sans fil",
+      "best": true,
+      "suggested": false
+    },
+    {
+      "id": 4,
+      "category_id": 3,
+      "name": "Clavier Focus 21",
+      "reference": "8002CX930",
+      "price": 155.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Ce clavier d'ordinateur est doté d'une technologie de frappe pneumatique qui offre une expérience de frappe tactile et immersive. Il est équipé de touches programmables pour une personnalisation maximale de vos raccourcis clavier. Le clavier est compatible avec une large gamme d'appareils grâce à sa connectivité Bluetooth ou USB. Son design épuré et élégant s'adapte à tout type de bureau et son rétroéclairage LED personnalisable ajoute une touche de style à votre espace de travail.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p4.png",
+      "short_description": "Sans fil, Bluetooth",
+      "best": true,
+      "suggested": false
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "name": "Macbook pro 13”",
+      "reference": "2239UE903",
+      "price": 1400.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Le Apple MacBook Pro 16 2021 est un PC Portable annoncé le 18 octobre 2021. Itération majeure du MacBook Pro, il introduit notamment un nouveau SoC Apple M1 Pro (M1 Max en option) avec 10 cœurs pour la partie CPU et 16 à 32 cœurs pour la partie GPU, le tout épaulé par 16 à 64 Go de RAM.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p5.png",
+      "short_description": "256go, 16g RAM",
+      "best": false,
+      "suggested": true
+    },
+    {
+      "id": 6,
+      "category_id": 3,
+      "name": "Magic Mouse",
+      "reference": "2356PL091",
+      "price": 70.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>La souris est compatible avec une large gamme d'appareils grâce à sa connectivité sans fil Bluetooth ou USB. Elle dispose également d'une batterie rechargeable intégrée pour une utilisation sans fil prolongée. Le design ergonomique assure une prise en main confortable, même lors de sessions de travail prolongées.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p6.png",
+      "short_description": "Sans fil, Blanc",
+      "best": false,
+      "suggested": true
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "name": "HP 11” Notebook",
+      "reference": "7729DI092",
+      "price": 572.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Ce laptop ultra-fin est équipé d'un processeur de dernière génération pour des performances de pointe et une efficacité énergétique maximale. Son écran Full HD offre une qualité d'image exceptionnelle pour une expérience visuelle immersive. Le laptop est doté d'un clavier rétroéclairé pour une utilisation confortable dans les environnements sombres et d'un pavé tactile précis pour une navigation aisée. Il dispose également d'une connectivité Bluetooth et Wi-Fi rapide pour un accès facile à Internet et à vos périphériques sans fil. Son design élégant et épuré en fait un compagnon de travail parfait pour tous les professionnels nomades.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p7.png",
+      "short_description": "128go, 8g RAM",
+      "best": false,
+      "suggested": true
+    },
+    {
+      "id": 8,
+      "category_id": 3,
+      "name": "Clavier Apple",
+      "reference": "8293DU737",
+      "price": 75.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Ce clavier d'ordinateur est équipé d'un système de reconnaissance vocale avancé qui vous permet de dicter votre texte directement sur le clavier. Il est également équipé de capteurs de pression pour une expérience de frappe plus ergonomique et confortable. Le clavier est compatible avec une large gamme d'appareils grâce à sa connectivité Bluetooth ou USB. Son design compact et léger facilite le transport et l'utilisation en déplacement.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p8.png",
+      "short_description": "Sans fil, Bluetooth",
+      "best": false,
+      "suggested": true
+    },
+    {
+      "id": 9,
+      "category_id": 3,
+      "name": "Clavier Gamer DRTZ",
+      "reference": "9114BZ029",
+      "price": 400.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Ce clavier d'ordinateur est équipé d'une technologie de reconnaissance d'empreintes digitales pour une sécurité accrue de vos données sensibles. Il est également doté d'une fonctionnalité de rétroéclairage personnalisable pour une expérience de frappe plus agréable dans toutes les conditions d'éclairage. Le clavier est compatible avec une large gamme d'appareils grâce à sa connectivité sans fil Bluetooth ou USB. Son design ergonomique assure une position de frappe confortable et saine pour les mains et les poignets.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p9.png",
+      "short_description": "Filaire, Retro-éclairé",
+      "best": false,
+      "suggested": true
+    },
+    {
+      "id": 10,
+      "category_id": 2,
+      "name": "Écran 21\" LCD",
+      "reference": "7275YC761",
+      "price": 230.0,
+      "description": "<p><strong>Fiche Technique</strong></p>Cet écran d'ordinateur est équipé d'un éclairage LED avancé qui offre une luminosité exceptionnelle pour une qualité d'image éblouissante. Son verre trempé ultra-résistant et son cadre en aluminium brossé confèrent un aspect élégant et moderne..</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p10.png",
+      "short_description": "FHD Dell P2219H",
+      "best": false,
+      "suggested": true
+    },
+    {
+      "id": 11,
+      "category_id": 3,
+      "name": "Souris G click",
+      "reference": "8203WS839",
+      "price": 155.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Cette souris d'ordinateur est équipée d'une technologie de reconnaissance gestuelle avancée, permettant une interaction intuitive avec votre ordinateur. Grâce à ses capteurs biométriques, la souris est en mesure de suivre votre rythme cardiaque pour s'adapter automatiquement à votre niveau de stress.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p11.png",
+      "short_description": "Wireless & filaire",
+      "best": false,
+      "suggested": true
+    },
+    {
+      "id": 12,
+      "category_id": 2,
+      "name": "Écran OLED 50\"",
+      "reference": "4934OL020",
+      "price": 800.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Avec une connectivité HDMI et VGA, cet écran est compatible avec une large gamme d'appareils. Les réglages de l'écran sont facilement accessibles via un menu à l'écran pour une personnalisation facile de la luminosité, du contraste et de la température de couleur.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p12.png",
+      "short_description": "Écran OLED LG 125cm",
+      "best": false,
+      "suggested": false
+    },
+    {
+      "id": 13,
+      "category_id": 3,
+      "name": "Souris pro-gamer",
+      "reference": "9834SO811",
+      "price": 34.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Les boutons programmables offrent une personnalisation maximale pour répondre à vos besoins spécifiques. La souris est compatible avec les appareils Android et iOS, offrant une expérience de navigation unifiée pour tous vos appareils.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p13.png",
+      "short_description": "Conçue pourles gamers",
+      "best": false,
+      "suggested": false
+    },
+    {
+      "id": 14,
+      "category_id": 3,
+      "name": "Clavier FastType",
+      "reference": "0398FT441",
+      "price": 80.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Ce clavier d'ordinateur est équipé d'une technologie de frappe silencieuse pour une expérience de frappe plus agréable et discrète. Il est également doté d'un pavé numérique amovible pour une utilisation plus flexible et une position de frappe plus ergonomique. Le clavier est compatible avec une large gamme d'appareils grâce à sa connectivité sans fil Bluetooth ou USB. Son design compact et élégant s'intègre facilement à tout type de bureau et son repose-poignet rembourré assure un confort optimal.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p14.png",
+      "short_description": "Adapté pour la frappe rapide",
+      "best": false,
+      "suggested": false
+    },
+    {
+      "id": 15,
+      "category_id": 1,
+      "name": "Acer Aspire 5",
+      "reference": "3948AA183",
+      "price": 499.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Cet ordinateur bureautique est conçu pour répondre à tous vos besoins professionnels. Il est équipé d'un processeur rapide pour des performances fiables et d'un grand espace de stockage pour stocker tous vos fichiers et documents. L'ordinateur dispose également d'un écran haute résolution pour une qualité d'image exceptionnelle et d'un clavier et d'une souris sans fil pour une utilisation facile et confortable. Il est équipé d'une connectivité Bluetooth et Wi-Fi rapide pour un accès facile à Internet et à vos périphériques sans fil. Son design élégant et professionnel convient parfaitement à tout environnement de bureau.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p15.png",
+      "short_description": "Parfait pour la bureautique",
+      "best": false,
+      "suggested": false
+    },
+    {
+      "id": 16,
+      "category_id": 1,
+      "name": "MSI GF63",
+      "reference": "2203GF063",
+      "price": 1650.0,
+      "description": "<p><strong>Fiche Technique</strong></p><p>Cet ordinateur gaming de haute performance est équipé d'un processeur de pointe et d'une carte graphique puissante pour offrir une expérience de jeu ultime. Son écran haute résolution assure une qualité d'image exceptionnelle pour une immersion totale. L'ordinateur dispose d'un système de refroidissement avancé pour maintenir des températures optimales pendant les sessions de jeu intenses. Il est également équipé d'un clavier rétroéclairé programmable pour une personnalisation maximale de votre configuration de jeu. Sa connectivité Bluetooth et Wi-Fi rapide vous permet d'accéder facilement à Internet et à vos périphériques sans fil. Son design futuriste et agressif en fait un ordinateur gaming parfait pour les gamers passionnés.</p><p><strong>Garantie commerciale 12 mois</strong></p><p>En cas de panne le produit est réparé sans frais. Si la réparation n’est pas possible, le produit est échangé. 30 jours pour tester le produit Vous avez 30 jours après réception du produit pour l'utiliser. S'il ne correspond pas à vos attentes, on vous le rembourse aussi sec</p>",
+      "image": "assets/products/p16.png",
+      "short_description": "Conçu pour les gamers",
+      "best": false,
+      "suggested": false
+    }
+  ]
+}

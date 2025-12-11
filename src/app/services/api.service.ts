@@ -1,53 +1,115 @@
+/**
+ * @fileoverview Mock API Service for TechNuy application.
+ * Replace all HTTP requests with data from data.json.
+ * @author Floriansp40
+ * @version 1.1.0
+ */
 import { Injectable } from '@angular/core';
-import {Category} from "../models/category.model";
-import {Product} from "../models/product.model";
+import { Category } from '../models/category.model';
+import { Product } from '../models/product.model';
+
+// @ts-ignore
+import data from './data.json'; 
+
+interface CategoryWithProducts extends Category {
+  products: Product[];
+}
+
+interface MockData {
+  category: Category[];
+  product: Product[];
+  user: any[]; 
+}
+
+const mockData: MockData = data as any;
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
-
-  public API_URL = 'http://localhost:8081/';
+export class ApiService { 
 
   constructor() { }
 
+  /**
+   * Simule la récupération des produits.
+   * Filtre par categoryId si spécifié.
+   * @returns Promise<Product[]>
+   */
   public getProducts(categoryId: number = -1): Promise<Product[]> {
-    const url = new URL('products');
+    let products = mockData.product;
 
-    if(categoryId !== -1) {
-      url.searchParams.append('category', categoryId.toString());
+    if (categoryId !== -1) {
+      products = products.filter(p => p.category_id == categoryId);
     }
-    return this.doRequest(url.toString()).then(response => response.json()) as Promise<Product[]>;
+
+    return Promise.resolve(products);
   }
 
+  /**
+   * Simule la récupération des "Best Products" (best = 1).
+   * @returns Promise<Product[]>
+   */
   public getBestProducts(): Promise<Product[]> {
-    return this.doRequest('products/best').then(response => response.json()) as Promise<Product[]>;
+    const bestProducts = mockData.product.filter(p => p.best == 1 || p.best == true);
+    return Promise.resolve(bestProducts);
   }
 
+  /**
+   * Simule la récupération des "Suggested Products" (suggested = 1).
+   * @returns Promise<Product[]>
+   */
   public getSuggestedProducts(): Promise<Product[]> {
-    return this.doRequest('products/suggested').then(response => response.json()) as Promise<Product[]>;
+    const suggestedProducts = mockData.product.filter(p => p.suggested === 1 || p.suggested === true);
+    return Promise.resolve(suggestedProducts);
   }
 
+  /**
+   * Simule la récupération de TOUTES les catégories.
+   * @returns Promise<Category[]>
+   */
   public getCategories(): Promise<Category[]> {
-    return this.doRequest('categories').then(response => response.json()) as Promise<Category[]>;
+    return Promise.resolve(mockData.category);
   }
 
+  /**
+   * Simule la récupération d'une catégorie par ID.
+   * Avec les produits associés.
+   * @returns Promise<Category>
+   */
+  public getCategoryWithProducts(id: number): Promise<CategoryWithProducts> {
+    const category = mockData.category.filter(c => c.id == id)[0];
+    const products = mockData.product.filter(p => p.category_id == id);
+    category.products = products;
+
+    if (category) {
+      return Promise.resolve(category);
+    }
+    return Promise.reject(new Error(`Category with ID ${id} not found.`));
+  }
+
+  /**
+   * Simule la récupération d'une catégorie par ID.
+   * @returns Promise<Category>
+   */
   public getCategory(id: number): Promise<Category> {
-    return this.doRequest('categories/' + id).then(response => response.json()) as Promise<Category>;
+    const category = mockData.category.filter(c => c.id == id)[0];
+
+    if (category) {
+      return Promise.resolve(category);
+    }
+    return Promise.reject(new Error(`Category with ID ${id} not found.`));
   }
 
+  /**
+   * Simule la récupération d'un produit par ID.
+   * @returns Promise<Product>
+   */
   public getProduct(id: number): Promise<Product> {
-    return this.doRequest('products/' + id).then(response => response.json()) as Promise<Product>;
-  }
-
-  private doRequest(url: string|URL, body: object|null = null): Promise<Response> {
-    return fetch(this.API_URL + url, {
-      method: body ? 'POST' : 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: body as BodyInit|null
-    });
+    const product = mockData.product.find(p => p.id == id);
+    if (product) {
+      return Promise.resolve(product);
+    }
+    return Promise.reject(new Error(`Product with ID ${id} not found.`));
   }
 }
