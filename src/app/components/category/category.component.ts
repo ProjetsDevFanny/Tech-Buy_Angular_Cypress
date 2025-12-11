@@ -1,3 +1,9 @@
+/**
+ * @fileoverview Component Category for TechBuy application.
+ * Handles display of products by category.
+ * @author Floriansp40
+ * @version 1.1.0
+ */
 import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit} from '@angular/core';
 import {Category} from "../../models/category.model";
 import {Title} from "@angular/platform-browser";
@@ -5,6 +11,10 @@ import {ApiService} from "../../services/api.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Subscription} from "rxjs";
 import {Product} from "../../models/product.model";
+
+interface CategoryWithProducts extends Category {
+  products: Product[];
+}
 
 @Component({
   selector: 'app-category',
@@ -22,7 +32,8 @@ export class CategoryComponent implements OnInit, OnDestroy, AfterViewInit {
 
   public ngOnInit() {
     this.subscription = this.route.params.subscribe(params => {
-      this.api.getCategory(params['id']).then((category: Category|Response) => {
+      this.api.getCategoryWithProducts(params['id']).then((category: CategoryWithProducts|Response) => {
+        
         if((category as Response)?.status === 404) {
           this.router.navigate(['/']);
           return ;
