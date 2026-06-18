@@ -51,7 +51,9 @@ export class ApiService {
    * @returns Promise<Product[]>
    */
   public getBestProducts(): Promise<Product[]> {
-    const bestProducts = mockData.product.filter(p => p.best == 1 || p.best == true);
+    const bestProducts = mockData.product.filter(
+      p => p.best === true
+    );
     return Promise.resolve(bestProducts);
   }
 
@@ -59,10 +61,12 @@ export class ApiService {
    * Simule la récupération des "Suggested Products" (suggested = 1).
    * @returns Promise<Product[]>
    */
-  public getSuggestedProducts(): Promise<Product[]> {
-    const suggestedProducts = mockData.product.filter(p => p.suggested === 1 || p.suggested === true);
-    return Promise.resolve(suggestedProducts);
-  }
+    public getSuggestedProducts(): Promise<Product[]> {
+      const suggestedProducts = mockData.product.filter(
+        p => p.suggested === true
+      );
+      return Promise.resolve(suggestedProducts);
+    }
 
   /**
    * Simule la récupération de TOUTES les catégories.
