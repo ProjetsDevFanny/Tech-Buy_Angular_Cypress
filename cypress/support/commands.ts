@@ -35,3 +35,15 @@
 //     }
 //   }
 // }
+
+Cypress.Commands.add("getBySel", (selector, ...args) => {
+  return cy.get(`[data-cy=${selector}]`, ...args)
+})
+
+//1er ...args =   rest operator : on récupère les arguments passés à la fonction getBySel
+//2eme ...args = spread operator : on les retransmet à la fonction get
+
+// Version quifonctionnerait si on n'avait jamais besoin d'options: 
+// Cypress.Commands.add("getBySel", (selector) => {
+//   return cy.get(`[data-cy=${selector}]`)
+// })
