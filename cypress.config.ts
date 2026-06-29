@@ -1,6 +1,8 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "f5so18", // <-- remplace par TON projectId affiché sur Cypress Cloud
+
   // allowCypressEnv: false,
 
   e2e: {
